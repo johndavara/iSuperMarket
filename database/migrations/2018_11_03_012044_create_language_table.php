@@ -19,6 +19,20 @@ class CreateLanguageTable extends Migration
             $table->string('globalization');
             $table->timestamps();
         });
+        DB::table('language')->insert(
+            array(
+                'id' => '1',
+                'localization' => 'en',
+                'globalization' => 'en-US'
+            )
+        );
+        DB::table('language')->insert(
+            array(
+                'id' => '2',
+                'localization' => 'es',
+                'globalization' => 'es-ES'
+            )
+        );
     }
 
     /**

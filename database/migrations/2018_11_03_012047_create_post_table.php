@@ -31,8 +31,7 @@ class CreatePostTable extends Migration
             //FOREIGH KEYS
             //language
             $table->foreign('id_language')
-                  ->references('id')->on('languages');
-            $table->timestamps();
+                  ->references('id')->on('language');
             $table->timestamps();
         });
     }

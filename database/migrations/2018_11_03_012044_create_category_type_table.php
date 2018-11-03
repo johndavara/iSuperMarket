@@ -19,6 +19,35 @@ class CreateCategoryTypeTable extends Migration
             $table->string('description');
             $table->timestamps();
         });
+        // Insert category types
+        DB::table('category_type')->insert(
+            array(
+                'id' => '1',
+                'title' => 'menu',
+                'description' => 'Main menu'
+            )
+        );
+        DB::table('category_type')->insert(
+            array(
+                'id' => '2',
+                'title' => 'recipies',
+                'description' => 'Recipies'
+            )
+        );
+        DB::table('category_type')->insert(
+            array(
+                'id' => '3',
+                'title' => 'news',
+                'description' => 'News'
+            )
+        );
+        DB::table('category_type')->insert(
+            array(
+                'id' => '4',
+                'title' => 'tips',
+                'description' => 'Recipies'
+            )
+        );
     }
 
     /**
