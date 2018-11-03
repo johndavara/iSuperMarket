@@ -17,12 +17,13 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('id_parent_category');
             $table->unsignedInteger('id_language');
-            $table->string('name');
+            $table->string('title');
             $table->string('description');
             $table->string('meta_description');
-            $table->string('meta_keywords');
+            $table->string('meta_keyword');
             $table->string('meta_author');
             $table->string('meta_viewport');
+            $table->unsignedInteger('id_category_type')->nullable();
 
             //FOREIGH KEYS
             //category
@@ -32,6 +33,9 @@ class CreateCategoriesTable extends Migration
             //language
             $table->foreign('id_language')
                   ->references('id')->on('languages');
+            //category type
+            $table->foreign('id_category_type')
+                  ->references('id')->on('category_type');
             $table->timestamps();
         });
     }
