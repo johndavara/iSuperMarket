@@ -32,7 +32,7 @@ class CreateCategoriesTable extends Migration
                   ->onDelete('cascade');
             //language
             $table->foreign('id_language')
-                  ->references('id')->on('languages');
+                  ->references('id')->on('language');
             //category type
             $table->foreign('id_category_type')
                   ->references('id')->on('category_type');

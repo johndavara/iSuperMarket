@@ -24,10 +24,6 @@ class CreateRelatedpostTable extends Migration
             $table->foreign('id_parent_post')
                   ->references('id')->on('post')
                   ->onDelete('cascade');
-            $table->foreign('id_parent_post')
-                  ->references('id')->on('post')
-                  ->onDelete('cascade');
-            $table->timestamps();
         });
     }
 

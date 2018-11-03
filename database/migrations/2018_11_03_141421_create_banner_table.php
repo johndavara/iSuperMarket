@@ -24,7 +24,7 @@ class CreateBannerTable extends Migration
             //FOREIGH KEYS
             //language
             $table->foreign('id_language')
-                  ->references('id')->on('languages');
+                  ->references('id')->on('language');
         });
     }
 
