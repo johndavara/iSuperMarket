@@ -16,6 +16,7 @@ class CreatePostTable extends Migration
         Schema::create('post', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('id_language')->nullable();
+            $table->unsignedInteger('id_category')->nullable();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->string('meta_description')->nullable();
@@ -32,6 +33,8 @@ class CreatePostTable extends Migration
             //language
             $table->foreign('id_language')
                   ->references('id')->on('language');
+            $table->foreign('id_category')
+                  ->references('id')->on('categories');
             $table->timestamps();
         });
     }

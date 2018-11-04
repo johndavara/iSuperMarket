@@ -87,7 +87,7 @@ class CreateCategoriesTable extends Migration
             array(
                 'id' => '4',
                 'id_language' => '2',//español
-                'title' => 'News',
+                'title' => 'Tips',
                 'description' => 'Tips por iSupermarket',
                 'meta_description' => 'Todo tipo de tips',
                 'meta_keyword' => 'Tips,tips,tip',

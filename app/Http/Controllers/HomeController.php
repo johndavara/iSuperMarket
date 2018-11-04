@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Banner;
 use App\Company;
 use App\Post;
+use App\Category;
 
 class HomeController extends Controller
 {
@@ -27,18 +28,24 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $banner = Banner::all();// For Slider
+
+       $menu = Category::where('id_category_type', '=', 1)->get();
+       $banner = Banner::all();// For Slider
         $company = Company::all(); // For Footer
-        $recipies = Post::where('id', '=', 1) //For Recipies section
-        ->where('id_category_type', '=', 1)// category type menu
+        $recipies = Post::join('categories' , 'categories.id' , '=','post.id_category') //For Recipies section
+        ->where('categories.id_category_type', '=', 2)// category type menu
+        ->where('categories.id', '=', 2) 
         ->get();
-        $news = Post::where('id', '=', 2)// For News section
-        ->where('id_category_type', '=', 1)// category type menu
+        $news = Post::join('categories' , 'categories.id' , '=','post.id_category') //For news section
+        ->where('categories.id_category_type', '=', 3)// category type menu
+        ->where('categories.id', '=', 3) 
         ->get();
-        $tips = Post::where('id', '=', 3)// For tips section
-        ->where('id_category_type', '=', 1)// category type menu
+        $tips = Post::join('categories' , 'categories.id' , '=','post.id_category') //For tips section
+        ->where('categories.id_category_type', '=', 4)// category type menu
+        ->where('categories.id', '=', 4) 
         ->get();
 
-        return view('home', compact('banner','company','recipies'));
+
+    return view('home',compact('menu','banner','company','recipies','news','tips'));
     }
 }

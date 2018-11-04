@@ -80,18 +80,19 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            <nav class="navbar navbar-dark bg-primary">
+            <!-- Navbar content -->
+                <a class="navbar-brand" href="#">
+                    <img src="/images/logo/logo.png" width="100" height="100" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            </nav>
             </div>
         </div>
     </body>
