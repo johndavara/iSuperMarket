@@ -32,18 +32,20 @@ class HomeController extends Controller
        $menu = Category::where('id_category_type', '=', 1)->get();
        $banner = Banner::all();// For Slider
         $company = Company::all(); // For Footer
-        $recipies = Post::join('categories' , 'categories.id' , '=','post.id_category') //For Recipies section
-        ->where('categories.id_category_type', '=', 2)// category type menu
-        ->where('categories.id', '=', 2) 
-        ->get();
+        $recipies = Category::where('id_parent_category', '=', 2) ->get();
         $news = Post::join('categories' , 'categories.id' , '=','post.id_category') //For news section
+        ->where('categories.id', '=', 3) 
+        ->select('post.id','post.id','post.id_language','post.id_category','post.title', 'post.description',
+        'post.meta_description','post.meta_keyword', 'post.meta_author', 'post.meta_viewport','post.image_url','post.image_alt','post.image_tooltip'
+        ,'post.post_order','post.video_url')
+        ->get();
+        
+        
+        /*Post::join('categories' , 'categories.id' , '=','post.id_category') //For news section
         ->where('categories.id_category_type', '=', 3)// category type menu
         ->where('categories.id', '=', 3) 
-        ->get();
-        $tips = Post::join('categories' , 'categories.id' , '=','post.id_category') //For tips section
-        ->where('categories.id_category_type', '=', 4)// category type menu
-        ->where('categories.id', '=', 4) 
-        ->get();
+        ->get();*/
+        $tips = Category::where('id_parent_category', '=', 4) ->get();
 
 
     return view('home',compact('menu','banner','company','recipies','news','tips'));

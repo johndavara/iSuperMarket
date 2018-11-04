@@ -25,6 +25,9 @@ class CreateCategoriesTable extends Migration
             $table->string('meta_viewport')->nullable();
             $table->unsignedInteger('id_category_type')->nullable();
             $table->string('url')->nullable();
+            $table->string('image_url')->nullable();
+            $table->string('image_alt')->nullable();
+            $table->string('image_tooltip')->nullable();
 
             //FOREIGH KEYS
             //category
@@ -113,7 +116,7 @@ class CreateCategoriesTable extends Migration
         );
 
         // Recipies Categories
-        /*
+        
         DB::table('categories')->insert(
             array(
                 'id' => '6',
@@ -121,12 +124,15 @@ class CreateCategoriesTable extends Migration
                 'id_language' => '1',//english
                 'title' => 'Super Chef',
                 'description' => 'Super Chef by iSupermarket',
-                'meta_description' => 'Super Chef recipies with iSupermarket products',
-                'meta_keyword' => 'SuperChefRecipies,superchef',
+                'meta_description' => 'Super Chef recetas hechas con productos iSupermarket',
+                'meta_keyword' => 'RecetasSuperChef,Superchef',
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '2',//menu
-                'url' => 'home'
+                'url' => '',
+                'image_url' => 'images/recipies/superchef.jpg',
+                'image_alt' => 'Super Chef',
+                'image_tooltip' => 'Super Chef'
             )
         );
 
@@ -136,13 +142,16 @@ class CreateCategoriesTable extends Migration
                 'id_parent_category' => '2',
                 'id_language' => '1',//english
                 'title' => 'Breakfast',
-                'description' => 'Breakfast by iSupermarket',
-                'meta_description' => 'Breakfast recipies with iSupermarket products',
-                'meta_keyword' => 'breakfast,recipies',
+                'description' => 'Desayunos por iSupermarket',
+                'meta_description' => 'Desayunos hechos con productos de iSupermarket',
+                'meta_keyword' => 'desayuno,desayunos',
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '2',//menu
-                'url' => 'home'
+                'url' => '',
+                'image_url' => 'images/recipies/breakfast.jpg',
+                'image_alt' => 'Desayunos',
+                'image_tooltip' => 'Desayunos'
             )
         );
 
@@ -152,15 +161,20 @@ class CreateCategoriesTable extends Migration
                 'id_parent_category' => '2',
                 'id_language' => '1',//english
                 'title' => 'Main Course',
-                'description' => 'Main Course by iSupermarket',
-                'meta_description' => 'Main Course recipies with iSupermarket products',
-                'meta_keyword' => 'maincourse,recipies',
+                'description' => 'Plato fuerte por iSupermarket',
+                'meta_description' => 'Recetas de Plato Fuerte con productos iSuperMarket',
+                'meta_keyword' => 'plato fuerte,recetas plato fuerte',
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '2',//menu
-                'url' => 'maincourse'
+                'url' => '',
+                'image_url' => 'images/recipies/maincourse.jpg',
+                'image_alt' => 'Plato Fuerte',
+                'image_tooltip' => 'Plato Fuerte'
             )
-        );*/
+        );
+
+
     }
 
     /**
