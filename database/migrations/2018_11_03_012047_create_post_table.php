@@ -115,44 +115,134 @@ array(
 )
 );
 
-DB::table('post')->insert(
-array(
-    'id' => '3',
-    'id_language' => '2',
-    'id_category' => '3',//english
-    'title' => 'Milk duds chocolate caramelo',
-    'description' => '
-    Producto Importado
+    DB::table('post')->insert(
+    array(
+        'id' => '3',
+        'id_language' => '2',
+        'id_category' => '3',//english
+        'title' => 'Milk duds chocolate caramelo',
+        'description' => '
+        Producto Importado
 
-    Chewy Milk Duds Cookies
+        Chewy Milk Duds Cookies
 
-    Ingredientes:
-    • 1 paquete de Milk Duds
-    • 1 1/2 taza y media de manteca vegetal
-    • 1 1/2 taza y media de mantequilla de maní
-    • 2 tazas de azúcar, divididas
-    • 1 1/2 azúcar morena
-    • 4 huevos
-    • 3 3/4 taza de harina
-    • 2 cucharaditas de bicarbonato de soda
-    • 1 1/2 cucharaditas polvo para hornear
-    • 3/4 cucharadita de sal
-    Preparación:
-    En un bowl mezclar la manteca, la mantequilla de maní, 1 1/2 tazas de azúcar y el azúcar morena. Agregar los huevos uno a la vez, mientras se bate la mezcla.
-    Combinar los ingredientes secos. Añadirlos gradualmente a la mezcla y dejar reposar por al menos 1 hora.
+        Ingredientes:
+        • 1 paquete de Milk Duds
+        • 1 1/2 taza y media de manteca vegetal
+        • 1 1/2 taza y media de mantequilla de maní
+        • 2 tazas de azúcar, divididas
+        • 1 1/2 azúcar morena
+        • 4 huevos
+        • 3 3/4 taza de harina
+        • 2 cucharaditas de bicarbonato de soda
+        • 1 1/2 cucharaditas polvo para hornear
+        • 3/4 cucharadita de sal
+        Preparación:
+        En un bowl mezclar la manteca, la mantequilla de maní, 1 1/2 tazas de azúcar y el azúcar morena. Agregar los huevos uno a la vez, mientras se bate la mezcla.
+        Combinar los ingredientes secos. Añadirlos gradualmente a la mezcla y dejar reposar por al menos 1 hora.
 
-    Poner 4 cucharaditas de la masa al rededor de cada Milk dud para cubrirlo completamente. Cubrirlas bolitas que se forman con el azúcar que queda. Ponerlas sobre un recipiente para horno sin engrasar. Hornear a 350ºF por 10-12 min. Dejar enfriar por 5 minutos y remover',
-    'meta_description' => 'Milk duds chocolate caramelo',
-    'meta_keyword' => 'milkduds, milk duds',
-    'meta_author' => 'iSupermarket',
-    'meta_viewport' => '',
-    'image_url' => 'images/news/milk-duds.png',
-    'image_alt' => 'Milk duds chocolate caramelo',
-    'image_tooltip' => 'Milk duds chocolate caramelo',
-    'post_order' => '3',
-    'video_url' => ''
-)
-);
+        Poner 4 cucharaditas de la masa al rededor de cada Milk dud para cubrirlo completamente. Cubrirlas bolitas que se forman con el azúcar que queda. Ponerlas sobre un recipiente para horno sin engrasar. Hornear a 350ºF por 10-12 min. Dejar enfriar por 5 minutos y remover',
+        'meta_description' => 'Milk duds chocolate caramelo',
+        'meta_keyword' => 'milkduds, milk duds',
+        'meta_author' => 'iSupermarket',
+        'meta_viewport' => '',
+        'image_url' => 'images/news/milk-duds.png',
+        'image_alt' => 'Milk duds chocolate caramelo',
+        'image_tooltip' => 'Milk duds chocolate caramelo',
+        'post_order' => '3',
+        'video_url' => ''
+    )
+    );
+
+    DB::table('post')->insert(
+        array(
+            'id' => '4',
+            'id_language' => '2',
+            'id_category' => '4',//english
+            'title' => 'Milk duds chocolate caramelo',
+            'description' => '
+            Colores tropicales, llenos de vida y luz son los tonos de labial más populares de la temporada. Sin embargo, es el rojo y sus diferentes matices el que ha llamado la atención de líderes de opinión y maquillistas profesionales. En el mercado encontrarás un sinfín de tonos, la clave es que selecciones el que mejor quede con tu tono de piel, para esto, te brindamos estos tips:
+
+                Piel blanca:
+                
+                Es una piel que posee un tono rosado en el fondo, es decir, se torna rojiza con facilidad.
+                Los colores fríos, es decir, los tonos con mayor cantidad de azul que rojo en la mezcla de colores; son el complemento perfecto.
+                Tonos sugeridos:
+                Vino Tinto: un tono vibrante y juvenil
+                Cereza: un color elegante y sofisticado y el gran protagonista del 2015
+                Marsala: un tono intenso que contrasta perfectamente con la piel blanca.',
+            'meta_description' => 'Los tonos perfectos de rojo',
+            'meta_keyword' => 'tonos perfectos de rojo, tonos rojos',
+            'meta_author' => 'iSupermarket',
+            'meta_viewport' => '',
+            'image_url' => 'images/tips/redtones.jpg',
+            'image_alt' => 'Los tonos perfectos de rojo',
+            'image_tooltip' => 'Los tonos perfectos de rojo',
+            'post_order' => '1',
+            'video_url' => ''
+        )
+        );
+
+        DB::table('post')->insert(
+            array(
+                'id' => '5',
+                'id_language' => '2',
+                'id_category' => '4',//english
+                'title' => 'Higiene facial, un ritual nocturno necesario',
+                'description' => '
+                Los dermatólogos recomiendan no omitir el proceso de limpieza facial por la noche, no importa qué tan cansado se esté o si se tiene poco tiempo; es muy importante realizarlo. Tener una adecuada higiene facial no requiere de una gran inversión; lo único que debe hacerse es ser constantes, usar productos hipoalergénicos y secar el rostro con una toalla limpia. Esta pequeña rutina traerá 3 grandes beneficios:
+
+Elimina la contaminación: el rostro entra todos los días en contacto con diferentes partículas que no son nada saludables para la piel, como el humo, el sol y hasta el aire acondicionado. La eliminación del estrés ambiental del día le da a la piel el descanso cosmético que necesita para recuperarse de posibles factores irritantes.
+
+Evita la obstrucción de los poros: en el caso de quienes usan maquillaje durante el día y luego no lo retiran por la noche, los poros se tapan, dando lugar a brotes de acné o erupciones que dan un mal aspecto al día siguiente. Esto también hace que los signos de envejecimiento aparezcan prematuros en las más jóvenes y se incrementen en las mujeres maduras.
+
+Remueve las células muertas: aunque no se utilice maquillaje, es importante lavarse el rostro por la noche porque las células cutáneas muertas se acumulan, e impiden que la dermis respire y en consecuencia no tenga una adecuada oxigenación. Esto hace que el rostro luzca áspero, manchado e incómodo. Al deshacerse de las células muertas, la piel logra una apariencia más suave, fresca y radiante.',
+                'meta_description' => 'Los tonos perfectos de rojo',
+                'meta_keyword' => 'higiene,facial,higiene facial',
+                'meta_author' => 'iSupermarket',
+                'meta_viewport' => '',
+                'image_url' => 'images/tips/facialhygiene.jpg',
+                'image_alt' => 'Higiene facial, un ritual nocturno necesario',
+                'image_tooltip' => 'Higiene facial, un ritual nocturno necesario',
+                'post_order' => '2',
+                'video_url' => ''
+            )
+            );
+
+            DB::table('post')->insert(
+                array(
+                    'id' => '6',
+                    'id_language' => '2',
+                    'id_category' => '4',//english
+                    'title' => 'El quitamanchas, un producto infaltable',
+                    'description' => '
+                    En realidad es súper infaltable, sobre todo si se tienen niños. De este producto puede encontrarse una gran variedad, pues se aplican de forma distinta según las superficies y materiales. Además, hay varias presentaciones disponibles: botellas rociadoras, en forma de pasta para aplicar con esponjas, en roll-on, tipo marcador, en barra… Lo que resulte más cómodo. Cuando se usa a tiempo, este producto puede evitar grandes gastos, ya que salvan alfombras, muebles, paredes y, por supuesto, prendas de vestir; entre muchas otras cosas.
+
+                    Es muy importante saber que no todas las manchas necesitan el mismo producto. Lo primero que debe tomarse en cuenta es el tipo de mancha. Estas pueden ser oxidables, grasas u orgánicas.
+                    
+                    ¿Cuál es cuál?
+                    
+                    Manchas oxidables: manchas de café, té, vino, fruta, tomate, barro u óxido.
+                    Qué usar: el ideal es un quitamanchas con oxígeno activo. Estos penetran en los tejidos haciendo que la mancha se disuelva, potenciando el efecto del detergente. Se aplican directamente sobre la mancha o añadido al detergente.
+                    
+                    Manchas grasas: rozaduras en cuellos y puños, pintalabios, maquillaje, aceite vegetal o cualquier otro, mayonesa o mantequilla.
+                    Qué usar: se atacan con un producto desengrasante. Normalmente estos se pulverizan sobre la mancha.
+                    
+                    Manchas orgánicas: sudor, sangre, cacao, leche, salsas o hierbas.
+                    Qué usar: se debe utilizar un producto enzimático que se aplica directamente sobre la mancha y luego se deja actuar durante dos minutos antes de lavar, ya sea a mano o a máquina.
+                    
+                    Es recomendable leer siempre las instrucciones en las etiquetas para evitar dañar las manos o tener una reacción alérgica.',
+                    'meta_description' => 'Los tonos perfectos de rojo',
+                    'meta_keyword' => 'quita manchas',
+                    'meta_author' => 'iSupermarket',
+                    'meta_viewport' => '',
+                    'image_url' => 'images/tips/stainremover.jpg',
+                    'image_alt' => 'El quitamanchas, un producto infaltable',
+                    'image_tooltip' => 'El quitamanchas, un producto infaltable',
+                    'post_order' => '3',
+                    'video_url' => ''
+                )
+                );
     }
 
     /**
