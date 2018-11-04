@@ -40,12 +40,13 @@ class HomeController extends Controller
         ,'post.post_order','post.video_url')
         ->get();
         
-        
-        /*Post::join('categories' , 'categories.id' , '=','post.id_category') //For news section
-        ->where('categories.id_category_type', '=', 3)// category type menu
-        ->where('categories.id', '=', 3) 
-        ->get();*/
-        $tips = Category::where('id_parent_category', '=', 4) ->get();
+    
+        $tips = Post::join('categories' , 'categories.id' , '=','post.id_category') //For news section
+        ->where('categories.id', '=', 4) 
+        ->select('post.id','post.id','post.id_language','post.id_category','post.title', 'post.description',
+        'post.meta_description','post.meta_keyword', 'post.meta_author', 'post.meta_viewport','post.image_url','post.image_alt','post.image_tooltip'
+        ,'post.post_order','post.video_url')
+        ->get();
 
 
     return view('home',compact('menu','banner','company','recipies','news','tips'));
