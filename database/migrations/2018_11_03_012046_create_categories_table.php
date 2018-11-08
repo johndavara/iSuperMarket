@@ -69,7 +69,7 @@ class CreateCategoriesTable extends Migration
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '1',//menu
-                'url' => 'home'
+                'url' => 'recipes'
             )
         );
         DB::table('categories')->insert(
@@ -83,7 +83,7 @@ class CreateCategoriesTable extends Migration
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '1',//menu
-                'url' => 'home'
+                'url' => 'news'
             )
         );
         DB::table('categories')->insert(
@@ -97,7 +97,7 @@ class CreateCategoriesTable extends Migration
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '1',//menu
-                'url' => 'home'
+                'url' => 'tips'
             )
         );
         DB::table('categories')->insert(
@@ -111,7 +111,7 @@ class CreateCategoriesTable extends Migration
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
                 'id_category_type' => '1',//menu
-                'url' => 'home'
+                'url' => 'contact'
             )
         );
 

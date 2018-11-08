@@ -23,7 +23,7 @@
                         <!-- Links -->
                             <div class="text-white">
                                 @foreach ($menu as $menuItem)  
-                                    <a href="#!" class="float-left pl-4 text-dark">{{$menuItem->title}}</a>
+                                    <a href={{$menuItem->url}} class="float-left pl-4 text-dark">{{$menuItem->title}}</a>
                                 @endforeach
                             </div>
                         </div>
