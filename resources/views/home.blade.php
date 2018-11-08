@@ -2,19 +2,6 @@
 
 @section('content')
 <div class="container">
-<nav class="navbar navbar-expand-sm bg-primary navbar-light">
-            <!-- Navbar content -->
-                <a class="navbar-brand" href="#">
-                    <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
-                </a>
-                <ul class="navbar-nav">
-             @foreach ($menu as $menuItem)  
-                <li class="nav-item active">
-                <a class="nav-link" href="#">{{$menuItem->title}}</a>
-                </li>
-              @endforeach 
-            </ul>
-</nav>
     <div class="row justify-content-center">
         <div class="col-md-12">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -114,57 +101,5 @@
        </div>
 
     </div>
-    
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4 bg-primary">
-
-<!-- Footer Links -->
-<div class="container-fluid text-center text-md-left">
-
-  <!-- Grid row -->
-  <div class="row">
-
-    <!-- Grid column -->
-    <div class="col-md-6 mt-md-0 mt-3">
-
-                <a class="navbar-brand" href="#">
-                    <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
-                </a>
-      <!-- Content -->
-      <p class="isupermarket-brand">{{$company[0]->company_name}}</p>
-      <p>{{$company[0]->company_address}}</p>
-      <p>{{$company[0]->company_telephone}}</p>
-      <p>{{$company[0]->company_email}}</p>
-
-    </div>
-
-
-    <!-- Grid column -->
-    <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Links -->
-
-        <div class="text-white">
-        @foreach ($menu as $menuItem)  
-            <a href="#!" class="float-left pl-4 text-dark">{{$menuItem->title}}</a>
-        @endforeach
-       </div>
-
-      </div>
-
-
-  </div>
-
-</div>
-<!-- Footer Links -->
-
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3 bg-dark text-white">© 2018 Copyright:
-  <p> Grupo 2 Desarrollo Aplicaciones Web</p>
-</div>
-<!-- Copyright -->
-
-</footer>
-<!-- Footer -->
 </div>
 @endsection
