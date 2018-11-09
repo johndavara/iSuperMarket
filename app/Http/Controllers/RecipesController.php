@@ -21,6 +21,7 @@ class RecipesController extends Controller
     {
         $company = Company::all();
         $menu = Category::where('id_category_type', '=', 1)->get();
-        return view('recipes', compact('company', 'menu'));
+        $recipies = Category::where('id_parent_category', '=', 2) ->get();
+        return view('recipes', compact('company', 'menu', 'recipies'));
     }
 }
