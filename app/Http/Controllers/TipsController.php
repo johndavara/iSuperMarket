@@ -21,6 +21,16 @@ class TipsController extends Controller
     {
         $company = Company::all();
         $menu = Category::where('id_category_type', '=', 1)->get();
-        return view('tips', compact('company', 'menu'));
+        $tips = Post::where('id_category', '=', 4) ->get();
+        return view('tips', compact('company', 'menu', 'tips'));
     }
+
+    public function tipsCategory($id)
+    {
+        $company = Company::all();
+        $menu = Category::where('id_category_type', '=', 1)->get();
+        $tip = Post::where('id', '=', $id)->first();
+        return view('tipCategory', compact('company', 'menu', 'tip'));
+    }
+
 }
