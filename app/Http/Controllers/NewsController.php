@@ -29,4 +29,11 @@ class NewsController extends Controller
         ->get();
         return view('news', compact('company', 'menu', 'news'));
     }
+
+    public function getNew($id)
+    {
+        $company = Company::all();
+        $menu = Category::where('id_category_type', '=', 1)->get();
+        return view('getNew', compact('company', 'menu'));
+    }
 }

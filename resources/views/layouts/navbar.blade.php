@@ -9,7 +9,7 @@
                 <ul class="navbar-nav">
                     @foreach ($menu as $menuItem)  
                         <li class="nav-item active">
-                        <a class="nav-link" href="{{$menuItem->url}}">{{$menuItem->title}}</a>
+                        <a class="nav-link" href="/{{$menuItem->url}}">{{$menuItem->title}}</a>
                         </li>
                     @endforeach 
                 </ul>
