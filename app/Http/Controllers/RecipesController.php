@@ -28,6 +28,17 @@ class RecipesController extends Controller
     {
         $company = Company::all();
         $menu = Category::where('id_category_type', '=', 1)->get();
-        return view('recipesCategory', compact('company', 'menu'));
+        $category = Category::find($id);
+        $recipes = Post::where('id_category', '=', $id) ->get();
+        return view('recipesCategory', compact('company', 'menu', 'category', 'recipes'));
+    }
+
+    public function recipeDetails($idCateg, $id)
+    {
+        $company = Company::all();
+        $menu = Category::where('id_category_type', '=', 1)->get();
+        $category = Category::find($idCateg);
+        $recipe = Post::find($id);
+        return view('recipeDetails', compact('company', 'menu', 'category', 'recipe'));
     }
 }

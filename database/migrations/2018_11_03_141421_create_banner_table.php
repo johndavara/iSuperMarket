@@ -29,7 +29,7 @@ class CreateBannerTable extends Migration
         DB::table('banner')->insert(
             array(
                 'id' => '1',
-                'image_url' => 'images/banner/1.jpg',//español
+                'image_url' => '/images/banner/1.jpg',//español
                 'image_alt' => 'MasxMenos somos parte de tu vida',
                 'image_tooltip' => 'MasxMenos somos parte de tu vida',
                 'image_order' => '1',
@@ -39,7 +39,7 @@ class CreateBannerTable extends Migration
         DB::table('banner')->insert(
             array(
                 'id' => '2',
-                'image_url' => 'images/banner/2.png',//español
+                'image_url' => '/images/banner/2.png',//español
                 'image_alt' => 'Celebra ya empieza fin de año',
                 'image_tooltip' => 'Celebra ya empieza fin de año',
                 'image_order' => '2',
@@ -49,7 +49,7 @@ class CreateBannerTable extends Migration
         DB::table('banner')->insert(
             array(
                 'id' => '3',
-                'image_url' => 'images/banner/3.png',//español
+                'image_url' => '/images/banner/3.png',//español
                 'image_alt' => 'Todos los dias siempre frescos',
                 'image_tooltip' => 'Todos los dias siempre frescos',
                 'image_order' => '3',
@@ -59,7 +59,7 @@ class CreateBannerTable extends Migration
         DB::table('banner')->insert(
             array(
                 'id' => '4',
-                'image_url' => 'images/banner/4.jpg',//español
+                'image_url' => '/images/banner/4.jpg',//español
                 'image_alt' => 'Con todas tus medicinas estamos siempre contigo',
                 'image_tooltip' => 'Con todas tus medicinas estamos siempre contigo',
                 'image_order' => '3',

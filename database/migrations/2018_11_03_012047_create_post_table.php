@@ -70,7 +70,7 @@ class CreatePostTable extends Migration
         'meta_keyword' => 'reesstick,rees stick',
         'meta_author' => 'iSupermarket',
         'meta_viewport' => '',
-        'image_url' => 'images/news/reesstick.jpg',
+        'image_url' => '/images/news/reesstick.jpg',
         'image_alt' => 'Reese’s sticks de mani chocolate',
         'image_tooltip' => 'Reese’s sticks de mani chocolate',
         'post_order' => '1',
@@ -107,7 +107,7 @@ array(
     'meta_keyword' => 'Reese’s pieces,reeses, mantequilla de mani',
     'meta_author' => 'iSupermarket',
     'meta_viewport' => '',
-    'image_url' => 'images/news/reeses.png',
+    'image_url' => '/images/news/reeses.png',
     'image_alt' => 'Reese’s pieces',
     'image_tooltip' => 'Reese’s pieces',
     'post_order' => '2',
@@ -146,7 +146,7 @@ array(
         'meta_keyword' => 'milkduds, milk duds',
         'meta_author' => 'iSupermarket',
         'meta_viewport' => '',
-        'image_url' => 'images/news/milk-duds.png',
+        'image_url' => '/images/news/milk-duds.png',
         'image_alt' => 'Milk duds chocolate caramelo',
         'image_tooltip' => 'Milk duds chocolate caramelo',
         'post_order' => '3',
@@ -175,7 +175,7 @@ array(
             'meta_keyword' => 'tonos perfectos de rojo, tonos rojos',
             'meta_author' => 'iSupermarket',
             'meta_viewport' => '',
-            'image_url' => 'images/tips/redtones.jpg',
+            'image_url' => '/images/tips/redtones.jpg',
             'image_alt' => 'Los tonos perfectos de rojo',
             'image_tooltip' => 'Los tonos perfectos de rojo',
             'post_order' => '1',
@@ -201,7 +201,7 @@ Remueve las células muertas: aunque no se utilice maquillaje, es importante lav
                 'meta_keyword' => 'higiene,facial,higiene facial',
                 'meta_author' => 'iSupermarket',
                 'meta_viewport' => '',
-                'image_url' => 'images/tips/facialhygiene.jpg',
+                'image_url' => '/images/tips/facialhygiene.jpg',
                 'image_alt' => 'Higiene facial, un ritual nocturno necesario',
                 'image_tooltip' => 'Higiene facial, un ritual nocturno necesario',
                 'post_order' => '2',
@@ -236,13 +236,76 @@ Remueve las células muertas: aunque no se utilice maquillaje, es importante lav
                     'meta_keyword' => 'quita manchas',
                     'meta_author' => 'iSupermarket',
                     'meta_viewport' => '',
-                    'image_url' => 'images/tips/stainremover.jpg',
+                    'image_url' => '/images/tips/stainremover.jpg',
                     'image_alt' => 'El quitamanchas, un producto infaltable',
                     'image_tooltip' => 'El quitamanchas, un producto infaltable',
                     'post_order' => '3',
                     'video_url' => ''
                 )
                 );
+
+                DB::table('post')->insert(
+                    array(
+                        'id' => '7',
+                        'id_language' => '2',
+                        'id_category' => '7',//english
+                        'title' => 'Tostadas Francesas',
+                        'description' => '
+                         Ingredientes
+                        • 4 rebanas de pan cuadrado
+                        • 4 huevos
+                        • ½ taza de leche
+                        • 1 cdita. de vainilla
+                        • 1 cdita. de canela
+                        • Aceite
+                        Preparación
+                        1. En un tazón, mezcle los huevos, la leche y la vainilla.
+                        2. Sumerja las rebanadas de pan en la mezcla. Deben quedar cubiertas por ambos lados. Inmediatamente, coloque en un sartén caliente a fuego medio, con aceite. Cocine por ambos lados hasta que estén dorados.
+                        3. Retire del sartén, coloque en un plato y espolvoree canela. Sirva y acompañe con sirope de maple.
+                         ',
+                        'meta_description' => 'Tostadas francesas',
+                        'meta_keyword' => 'tostadas',
+                        'meta_author' => 'iSupermarket',
+                        'meta_viewport' => '',
+                        'image_url' => '/images/recipies/tostada-francesa.jpg',
+                        'image_alt' => 'Tostadas francesas',
+                        'image_tooltip' => 'Tostadas francesas',
+                        'post_order' => '1',
+                        'video_url' => ''
+                    )
+                    );
+
+                    DB::table('post')->insert(
+                        array(
+                            'id' => '8',
+                            'id_language' => '2',
+                            'id_category' => '7',//english
+                            'title' => 'Omelette',
+                            'description' => '
+                             Ingredientes
+                            • 3 huevos
+                            • 2 rodajas jamón
+                            • 2 rodajas queso
+                            • cant. necesaria sal y pimienta
+                            Preparación
+                            1. Rompe tres huevos, los huevos tienen que ser bien frescos.
+                            2. Corta el jamón y el queso.
+                            3. Batir los huevos, salpimentar.
+                            4. Poner a calentar la sartén con un chorlito de aceite y pone los huevos batidos.
+                            5. Cuando esté un poquito cocida, agregas el jamón y el queso.
+                            6. Con una espátula armas el omelette y lo servís con una ensalada.
+                             ',
+                            'meta_description' => 'Omelette',
+                            'meta_keyword' => 'omelette',
+                            'meta_author' => 'iSupermarket',
+                            'meta_viewport' => '',
+                            'image_url' => '/images/recipies/omelette.jpg',
+                            'image_alt' => 'omelette',
+                            'image_tooltip' => 'Omelette',
+                            'post_order' => '2',
+                            'video_url' => ''
+                        )
+                        );
     }
 
     /**

@@ -130,7 +130,7 @@ class CreateCategoriesTable extends Migration
                 'meta_viewport' => '',
                 'id_category_type' => '2',//menu
                 'url' => '',
-                'image_url' => 'images/recipies/superchef.jpg',
+                'image_url' => '/images/recipies/superchef.jpg',
                 'image_alt' => 'Super Chef',
                 'image_tooltip' => 'Super Chef'
             )
@@ -149,7 +149,7 @@ class CreateCategoriesTable extends Migration
                 'meta_viewport' => '',
                 'id_category_type' => '2',//menu
                 'url' => '',
-                'image_url' => 'images/recipies/breakfast.jpg',
+                'image_url' => '/images/recipies/breakfast.jpg',
                 'image_alt' => 'Desayunos',
                 'image_tooltip' => 'Desayunos'
             )
@@ -168,7 +168,7 @@ class CreateCategoriesTable extends Migration
                 'meta_viewport' => '',
                 'id_category_type' => '2',//menu
                 'url' => '',
-                'image_url' => 'images/recipies/maincourse.jpg',
+                'image_url' => '/images/recipies/maincourse.jpg',
                 'image_alt' => 'Plato Fuerte',
                 'image_tooltip' => 'Plato Fuerte'
             )

@@ -50,3 +50,14 @@ pre {
     font-family: inherit;
     font-size: 1rem;
 }
+
+.recipeCategory {
+    border: 1px solid rgb(185, 185, 185);
+    margin: 1.5rem 0;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    a:link,
+    a:visited {
+        color: inherit;
+    }
+}

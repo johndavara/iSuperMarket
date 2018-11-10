@@ -31,7 +31,7 @@ class CreateCompanyTable extends Migration
             array(
                 'id' => '1',
                 'company_name' => 'iSupermarket',//español
-                'company_logo' => 'images/logo/logo.png',
+                'company_logo' => '/images/logo/logo.png',
                 'company_telephone' => '800-8000-722',
                 'company_email' => 'SAC@wal-mart.com',
                 'company_address' => 'Heredia centro, Costa Rica',
