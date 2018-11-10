@@ -19,5 +19,6 @@ Route::get('/news', 'NewsController@index')->name('news');
 Route::get('/news/{id}', 'NewsController@getNew');
 Route::get('/tips', 'TipsController@index')->name('tips');
 Route::get('/contact', 'ContactController@index')->name('contact');
+Route::post('/contactPost', 'ContactController@post')->name('contactPost');
 
 Auth::routes();

@@ -23,4 +23,10 @@ class ContactController extends Controller
         $menu = Category::where('id_category_type', '=', 1)->get();
         return view('contact', compact('company', 'menu'));
     }
+
+    public function post(){
+        $company = Company::all();
+        $menu = Category::where('id_category_type', '=', 1)->get();
+        return view('contactSuccess', compact('company', 'menu'));
+    }
 }
