@@ -34,6 +34,7 @@ class NewsController extends Controller
     {
         $company = Company::all();
         $menu = Category::where('id_category_type', '=', 1)->get();
-        return view('getNew', compact('company', 'menu'));
+        $newDetails = Post::find($id);
+        return view('newDetails', compact('company', 'menu', 'newDetails'));
     }
 }
