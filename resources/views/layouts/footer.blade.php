@@ -9,7 +9,7 @@
                     <div class="row">
                         <!-- Grid column -->
                         <div class="col-md-6 mt-md-0 mt-3">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="/home">
                                 <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
                             </a>
                             <!-- Content -->

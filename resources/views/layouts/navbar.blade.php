@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <nav class="navbar navbar-expand-sm bg-primary navbar-light">
                 <!-- Navbar content -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/home">
                     <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
                 </a>
                 <ul class="navbar-nav">

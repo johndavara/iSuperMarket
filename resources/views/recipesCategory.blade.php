@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <ul class="breadcrumb">
-                <li><a href="home">Inicio</a></li>
+                <li><a href="/home">Inicio</a></li>
                 <li><a href="/recipes">Recetas</a></li>
                 <li>{{$category->title}}</li>
             </ul>
