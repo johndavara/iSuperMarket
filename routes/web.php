@@ -16,6 +16,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/recipes', 'RecipesController@index')->name('recipes');
 Route::get('/recipes/{idCategory}', 'RecipesController@recipesCategory');
 Route::get('/recipes/{idCategory}/{id}', 'RecipesController@recipeDetails');
+Route::post('/recipes/comment', 'RecipesController@comment')->name('commentRecipe');
 Route::get('/news', 'NewsController@index')->name('news');
 Route::get('/news/{id}', 'NewsController@getNew');
 Route::get('/tips', 'TipsController@index')->name('tips');

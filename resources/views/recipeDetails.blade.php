@@ -30,5 +30,6 @@
             <a href="/recipes/{{$category->id}}" class="btn btn-primary">Volver a {{$category->title}}</a>
         </div>
     </div>
+    @include("comments");
 </div>
 @endsection
