@@ -306,6 +306,172 @@ Remueve las células muertas: aunque no se utilice maquillaje, es importante lav
                             'video_url' => ''
                         )
                         );
+
+                        DB::table('post')->insert(
+                            array(
+                                'id' => '9',
+                                'id_language' => '2',
+                                'id_category' => '6',//english
+                                'title' => 'Pierna de Cordero',
+                                'description' => '
+                                 Ingredientes
+                                • 1 pierna de cordero de 1,5 kg aproximadamente, a poder ser con su grasa
+                                • 150 ml de vino blanco
+                                • 800 g de patatas
+                                • 3 dientes de ajo
+                                • 1 cucharadita rasa de romero seco en polvo
+                                • 1 cucharadita rasa de tomillo seco
+                                • Aceite de oliva
+                                • Sal y pimienta negra recién molida
+                                Preparación
+                                1. Sacar el cordero de la nevera para que esté a temperatura ambiente cuando lo metamos al horno..
+                                2. Meter en la base del horno una fuente con agua para que el ambiente del horno esté húmedo, y precalentarlo a 260 grados.
+                                3. Pelar tres dientes de ajo y cortarlos en láminas gruesas. Hacer pequeñas incisiones con un cuchillo en la carne y meter las láminas dentro..
+                                4. Salpimentar la carne y frotarla con el romero y el tomillo. Ponerla en otra fuente (no la del agua) e incorporar el vino y 150 ml de agua.
+                                5. Hornear 20 minutos, apagar el horno y dejar dentro el cordero 3 horas. Importante: no abrir la puerta del horno en todo el proceso.
+                                6. Mientras, en una cazuela en el fuego, cocer las patatas sin pelar en agua hirviendo durante 15 minutos. Sacar y dejar que se sequen.
+                                 ',
+                                'meta_description' => 'Pierna de cordero',
+                                'meta_keyword' => 'pierna, cordero',
+                                'meta_author' => 'iSupermarket',
+                                'meta_viewport' => '',
+                                'image_url' => '/images/recipies/lamb-leg.jpg',
+                                'image_alt' => 'Pierna de cordero',
+                                'image_tooltip' => 'Pierna de cordero',
+                                'post_order' => '1',
+                                'video_url' => ''
+                            )
+                            );
+
+                            DB::table('post')->insert(
+                                array(
+                                    'id' => '10',
+                                    'id_language' => '2',
+                                    'id_category' => '6',//english
+                                    'title' => 'Ravioles de queso',
+                                    'description' => '
+                                     Ingredientes
+                                     • Harina 0000 500 grs.
+                                     • Sal Cantidad necesaria
+                                     • Aceite de oliva 2 cdas.
+                                     • Yemas 2 Unidades
+                                     • Crema de leche 4 cdas.
+                                     • Tomillo fresco A gusto
+                                     • Queso de cabra 100 g
+                                     • Pimienta negra Cantidad necesaria
+                                     • Ricota 200 grs.
+                                     • Queso gruyere rallado 100 g
+                                    Preparación
+                                    Para la masa
+                                    – Mezclá en un recipiente todos los ingredientes y formar una masa.
+                                    – Amasá hasta lograr que sea suave y lisa.
+                                    – Estirá y cortá 2 rectángulos de tamaño similar. Reservá.
+                                    Para el relleno
+                                    – En un bol mezclá la ricota, los quesos rallados y la crema. Condimentá.
+                                    – Una vez listo, colocá en pequeñas porciones sobre una de las planchas, en línea y dejando un espacio regular entre una y otra, colocá encima la otra masa.
+                                    – Marcá bien los ravioles y cortalos con un cuchillo, cerralos bien para que no se abran en medio de la cocción.
+                                    – Cocinalos en una olla con abundante agua hirviendo y sal marina.
+                                    Salsa
+                                    – Calentá en un sartén aceite de oliva y agregá el echalote picado y el diente de ajo ecrasse.
+                                    – Añadí el tomate concassé y el vino blanco, dejá cocinar a fuego fuerte para que pierda la acidez, luego, incorporá la salsa de tomate y condimentá.
+                                    – Serví la salsa sobre los ravioles y agregá las hojas de albahaca.
+                                    – Espolvoreá con queso parmesano rallado.
+                                     ',
+                                    'meta_description' => 'Ravioles de queso',
+                                    'meta_keyword' => 'ravioli, queso',
+                                    'meta_author' => 'iSupermarket',
+                                    'meta_viewport' => '',
+                                    'image_url' => '/images/recipies/ravioli.jpg',
+                                    'image_alt' => 'Reavioles',
+                                    'image_tooltip' => 'Ravioles de queso',
+                                    'post_order' => '2',
+                                    'video_url' => ''
+                                )
+                                );
+
+                                DB::table('post')->insert(
+                                    array(
+                                        'id' => '11',
+                                        'id_language' => '2',
+                                        'id_category' => '8',//english
+                                        'title' => 'Lasagna de carne',
+                                        'description' => '
+                                         Ingredientes
+                                         • 400 g de carne picada de cerdo  
+                                         • 80 g de queso rallado 
+                                         • 2 cdas de aceite de oliva virgen extra  
+                                         • 1 bote de Sofrito de Tomate y Cebolla Gallina Blanca 
+                                         • 1 paquete de placas de Lasaña
+                                         • 1 sobre de Mi Salsa Bechamel 
+                                         • 1 chorrito de vino blanco  
+                                         • 1 pizca de sal
+                                        Preparación
+                                        – Dora en una cazuela la carne picada con el aceite de oliva. 
+                                        Cuando haya tomado color, añade el Sofrito de Tomate y Cebolla Gallina Blanca y déjalo cocinar unos 5 minutos. 
+                                        Pon a punto de sal. Añade el vino blanco y deja reducir por completo. 
+                                        Prepara Mi Salsa Bechamel Gallina Blanca, según las instrucciones del sobre.
+                                        – Monta la lasaña, para ello echa en una fuente de horno un poquito 
+                                        de Mi Salsa bechamel Gallina Blanca hasta cubrir la superficie
+                                        - Termina por encima de la lasaña con Mi Salsa bechamel Gallina Blanca, el queso rallado y cuece en el horno a 200ºC 
+                                        hasta que coja un bonito color dorado.
+                                         ',
+                                        'meta_description' => 'Lasagna de carne',
+                                        'meta_keyword' => 'lasagna, queso, carne',
+                                        'meta_author' => 'iSupermarket',
+                                        'meta_viewport' => '',
+                                        'image_url' => '/images/recipies/lasagna.jpg',
+                                        'image_alt' => 'Lasagna de carne',
+                                        'image_tooltip' => 'Lasagna de carne',
+                                        'post_order' => '1',
+                                        'video_url' => ''
+                                    )
+                                    );
+
+                                    DB::table('post')->insert(
+                                        array(
+                                            'id' => '12',
+                                            'id_language' => '2',
+                                            'id_category' => '8',//english
+                                            'title' => 'Ravioles de queso',
+                                            'description' => '
+                                             Ingredientes
+                                             • Harina 0000 500 grs.
+                                             • Sal Cantidad necesaria
+                                             • Aceite de oliva 2 cdas.
+                                             • Yemas 2 Unidades
+                                             • Crema de leche 4 cdas.
+                                             • Tomillo fresco A gusto
+                                             • Queso de cabra 100 g
+                                             • Pimienta negra Cantidad necesaria
+                                             • Ricota 200 grs.
+                                             • Queso gruyere rallado 100 g
+                                            Preparación
+                                            Para la masa
+                                            – Mezclá en un recipiente todos los ingredientes y formar una masa.
+                                            – Amasá hasta lograr que sea suave y lisa.
+                                            – Estirá y cortá 2 rectángulos de tamaño similar. Reservá.
+                                            Para el relleno
+                                            – En un bol mezclá la ricota, los quesos rallados y la crema. Condimentá.
+                                            – Una vez listo, colocá en pequeñas porciones sobre una de las planchas, en línea y dejando un espacio regular entre una y otra, colocá encima la otra masa.
+                                            – Marcá bien los ravioles y cortalos con un cuchillo, cerralos bien para que no se abran en medio de la cocción.
+                                            – Cocinalos en una olla con abundante agua hirviendo y sal marina.
+                                            Salsa
+                                            – Calentá en un sartén aceite de oliva y agregá el echalote picado y el diente de ajo ecrasse.
+                                            – Añadí el tomate concassé y el vino blanco, dejá cocinar a fuego fuerte para que pierda la acidez, luego, incorporá la salsa de tomate y condimentá.
+                                            – Serví la salsa sobre los ravioles y agregá las hojas de albahaca.
+                                            – Espolvoreá con queso parmesano rallado.
+                                             ',
+                                            'meta_description' => 'Ravioles de queso',
+                                            'meta_keyword' => 'ravioli, queso',
+                                            'meta_author' => 'iSupermarket',
+                                            'meta_viewport' => '',
+                                            'image_url' => '/images/recipies/ravioli.jpg',
+                                            'image_alt' => 'Reavioles',
+                                            'image_tooltip' => 'Ravioles de queso',
+                                            'post_order' => '2',
+                                            'video_url' => ''
+                                        )
+                                        );
     }
 
     /**
