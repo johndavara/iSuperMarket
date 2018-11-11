@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
+            <!-- SEO -->
+            <!-- IDENTIFY AND RECTIFY BROKEN LINKS -->
+            <!-- Usar maximo 4 niveles de estructuracion -->
             <ul class="breadcrumb">
                 <li><a href="/home">Inicio</a></li>
                 <li><a href="/recipes">Recetas</a></li>
@@ -20,6 +23,9 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="text-center">
+                <!-- SEO -->
+                <!-- OPTIMIZE YOUR TITLE AND DESCRIPTION -->
+                <!-- Titulo en cada pagina -->
                 <h1>{{$recipe->title}}</h1>
             </div>
             <pre>{{$recipe->description}}</pre> 

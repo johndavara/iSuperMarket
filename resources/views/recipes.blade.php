@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
+            <!-- SEO -->
+            <!-- KEEP CLICK PATHS SHORT -->
+            <!-- Uso de breadcumbs -->
             <ul class="breadcrumb">
                 <li><a href="/home">Inicio</a></li>
                 <li>Recetas</li>
@@ -13,6 +16,9 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="title-div">
+                <!-- SEO -->
+                <!-- OPTIMIZE YOUR TITLE AND DESCRIPTION -->
+                <!-- Titulo en cada pagina -->
                 <h1 class="main-title">{{$menu[1]->title}}</h1>
             </div>
         </div>

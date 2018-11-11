@@ -12,12 +12,16 @@
         @foreach ($banner as $bannerItem)  
             @if($bannerItem->image_order == 1)
                 <div class="carousel-item active">
+                    <!-- SEO -->
+                    <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
                     <img class="d-block w-100" src="{{$bannerItem->image_url}}" alt="{{$bannerItem->image_alt}}" title="{{$bannerItem->image_tooltip}}">
                 </div>
             @else
-            <div class="carousel-item">
-                <img class="d-block w-100" src="{{$bannerItem->image_url}}" alt="{{$bannerItem->image_alt}}" title="{{$bannerItem->image_tooltip}}">
-            </div>
+                <div class="carousel-item">
+                    <!-- SEO -->
+                    <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
+                    <img class="d-block w-100" src="{{$bannerItem->image_url}}" alt="{{$bannerItem->image_alt}}" title="{{$bannerItem->image_tooltip}}">
+                </div>
             @endif
         @endforeach  
     </div>

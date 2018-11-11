@@ -13,12 +13,17 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <!-- SEO -->
+            <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
             <img class="card-img-top" src="{{$newDetails->image_url}}" alt="{{$newDetails->image_alt}}" title="{{$newDetails->image_title}}">
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8 newDetails">
             <div class="newTitle">
+                <!-- SEO -->
+                <!-- OPTIMIZE YOUR TITLE AND DESCRIPTION -->
+                <!-- Titulo en cada pagina -->
                 <h1>{{$newDetails->title}}</h1>
             </div>
             <div class="newDescription">

@@ -13,8 +13,11 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div id="generalTitle">
-                {{$category->title}}
+            <div class="title-div">
+                <!-- SEO -->
+                <!-- OPTIMIZE YOUR TITLE AND DESCRIPTION -->
+                <!-- Titulo en cada pagina -->
+                <h1 class="main-title">{{$category->title}}</h1>
             </div>
         </div>
     </div>
@@ -22,6 +25,8 @@
         <div class="row justify-content-center recipeCategory">
             <div class="col-md-3">
                 <a href="/recipes/{{$category->id}}/{{$recipeItem->id}}">
+                    <!-- SEO -->
+                    <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
                     <img class="card-img-top" src="{{$recipeItem->image_url}}" alt="{{$recipeItem->image_alt}}" title="{{$recipeItem->image_title}}">
                 </a>
              </div>
