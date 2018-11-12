@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO -->
+    <!-- OPTIMIZE YOUR WEBSITE FOR MOBILE -->
+    <!-- El sitio web debería ser mobile friendly, se usa Bootstrap para adaptarlo a diferente pantallas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
