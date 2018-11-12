@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+    
+    <loc>http://localhost:8000/contact</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/contactPost</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/home</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/news</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/news/{id}</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/recipes</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/recipes/{idCategory}</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/recipes/{idCategory}/{id}</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/tips</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+    
+    <loc>http://localhost:8000/tips/{idCategory}</loc>
+        <lastmod>2018-11-12T00:53:08+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

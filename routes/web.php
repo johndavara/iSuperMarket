@@ -11,6 +11,9 @@
 |
 */
 
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Sitemap;
+
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/recipes', 'RecipesController@index')->name('recipes');
@@ -25,3 +28,19 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 Route::post('/contactPost', 'ContactController@post')->name('contactPost');
 
 Auth::routes();
+
+Route::get('/sitemap', function() {
+    Sitemap::create()
+   ->add('/home')
+   ->add('/recipes')
+   ->add('/recipes/{idCategory}')
+   ->add('/recipes/{idCategory}/{id}')
+   ->add('/news')
+   ->add('/news/{id}')
+   ->add('/tips')
+   ->add('/tips/{idCategory}')
+   ->add('/contact')
+   ->add('/contactPost')
+   ->writeToFile('sitemap.xml');
+    return 'Sitemap created';
+});
