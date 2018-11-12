@@ -6,6 +6,7 @@
         <div class="col-md-12">
             <!-- SEO -->
             <!-- IDENTIFY AND RECTIFY BROKEN LINKS -->
+            <!-- KEEP CLICK PATHS SHORT -->
             <!-- Usar maximo 4 niveles de estructuracion -->
             <ul class="breadcrumb">
                 <li><a href="/home">Inicio</a></li>

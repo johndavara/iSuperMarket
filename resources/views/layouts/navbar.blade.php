@@ -6,13 +6,18 @@
                 <a class="navbar-brand" href="/home">
                     <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
                 </a>
-                <ul class="navbar-nav">
-                    @foreach ($menu as $menuItem)  
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/{{$menuItem->url}}">{{$menuItem->title}}</a>
-                        </li>
-                    @endforeach 
-                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        @foreach ($menu as $menuItem)  
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/{{$menuItem->url}}">{{$menuItem->title}}</a>
+                            </li>
+                        @endforeach 
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
