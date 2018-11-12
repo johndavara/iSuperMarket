@@ -4,9 +4,37 @@
 @import "variables";
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
-.navbar-laravel {
-    background-color: #fff;
+.navbar {
+    background-color: #0069b7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    ul {
+        li {
+            a.nav-link {
+                color: white !important;
+                font-size: 1.2rem;
+            }
+            &:hover {
+                background-color: #fea50f;
+            }
+        }
+    }
+}
+
+footer {
+    .blue {
+        background-color: #0069b7 !important;
+    }
+    .menuFooter {
+        a {
+            margin-top: 0.8rem;
+            color: white !important;
+        }
+    }
+    .info {
+        p {
+            color: white !important;
+        }
+    }
 }
 
 #generalTitle {

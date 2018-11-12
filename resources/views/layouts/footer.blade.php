@@ -2,13 +2,13 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <!-- Footer -->
-            <footer class="page-footer font-small blue pt-4 bg-primary">
+            <footer class="page-footer font-small pt-4">
                 <!-- Footer Links -->
-                <div class="container-fluid text-center text-md-left">
+                <div class="container-fluid text-center text-md-left blue">
                     <!-- Grid row -->
                     <div class="row">
                         <!-- Grid column -->
-                        <div class="col-md-6 mt-md-0 mt-3">
+                        <div class="col-md-6 mt-md-0 mt-3 info">
                             <a class="navbar-brand" href="/home">
                                 <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
                             </a>
@@ -21,9 +21,9 @@
                         <!-- Grid column -->
                         <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Links -->
-                            <div class="text-white">
+                            <div class="menuFooter">
                                 @foreach ($menu as $menuItem)  
-                                    <a href={{$menuItem->url}} class="float-left pl-4 text-dark">{{$menuItem->title}}</a>
+                                    <a href={{$menuItem->url}} class="float-left pl-4">{{$menuItem->title}}</a>
                                 @endforeach
                             </div>
                         </div>
