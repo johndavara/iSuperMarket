@@ -18,6 +18,8 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-5">
+            <!-- SEO -->
+            <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
             <img class="card-img-top" src="{{$recipe->image_url}}" alt="{{$recipe->image_alt}}" title="{{$recipe->image_title}}">
         </div>
     </div>

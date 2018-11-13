@@ -10,6 +10,8 @@
                         <!-- Grid column -->
                         <div class="col-md-6 mt-md-0 mt-3 info">
                             <a class="navbar-brand" href="/home">
+                                <!-- SEO -->
+                                <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
                                 <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
                             </a>
                             <!-- Content -->

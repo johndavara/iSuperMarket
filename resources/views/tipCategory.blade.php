@@ -4,6 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
+
+            <!-- SEO -->
+            <!-- BREADCRUMBS -->
+            <!-- Uso de "breadcrumbs para un mejor conocimiento de las estructura del sito" -->
             <ul class="breadcrumb">
                 <li><a href="home">Inicio</a></li>
                 <li><a href="/tips">Tips</a></li>
@@ -18,6 +22,8 @@
         <h1 class="main-title"> {{$tip->title}}</h1>
     </div>
 
+    <!-- SEO -->
+    <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
     <img class="card-img-top tips-img" src="../{{$tip->image_url}}" alt="{{$tip->image_alt}}"
          title="{{$tip->image_title}}">
 

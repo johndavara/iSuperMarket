@@ -93,6 +93,8 @@
             <nav class="navbar navbar-dark bg-primary">
             <!-- Navbar content -->
                 <a class="navbar-brand" href="#">
+                    <!-- SEO -->
+                    <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
                     <img src="/images/logo/logo.png" width="100" height="100" alt="">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

@@ -4,6 +4,8 @@
             <nav class="navbar navbar-expand-sm navbar-light">
                 <!-- Navbar content -->
                 <a class="navbar-brand" href="/home">
+                    <!-- SEO -->
+                    <!-- USE ALT ATTRIBUTES TO OPTIMIZE IMAGES -->
                     <img src="{{$company[0]->company_logo}}" width="100" height="100" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
