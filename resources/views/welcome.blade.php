@@ -2,14 +2,22 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
+        <!-- SEO -->
+        <!-- Definicion de Meta ViewPort , Descripcion, Keywords, Autor y Titulo -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+        <meta name="description" content="Pagina inicial de iSuperMarket">
+        <meta name="keywords" content="iSuperMarket,supermercado,alimentos">
+        <meta name="author" content="iSuperMarket">
+        <title>iSuperMarket</title>
 
         <!-- Fonts -->
+        <!-- SEO -->
+        <!-- Utilizacion de fonts en lugar de usar elementos de etiquetas HTML para el texto -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        <!-- SEO -->
+        <!-- Definicion de Estilos CSS -->
         <style>
             html, body {
                 background-color: #fff;
@@ -65,6 +73,8 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+                <!-- SEO -->
+                <!-- SHORT URL -->
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

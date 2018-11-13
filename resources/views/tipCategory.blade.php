@@ -12,6 +12,9 @@
         </div>
     </div>
     <div class="title-div">
+        
+            <!-- SEO
+            H1 Unico por pagina -->
         <h1 class="main-title"> {{$tip->title}}</h1>
     </div>
 
